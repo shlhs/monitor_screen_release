@@ -9,12 +9,15 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.20-b23, mixed mode)
 
 ### 依赖周边组件：
 #### mysql
-
+![image](https://github.com/shlhs/monitor_screen_release/blob/master/pic/monitor_screen_table.jpg)
 
 #### redis
 
 ### 启动命令，参数根据实际情况修改或添加：
-java -jar /home/pvweb/pv-web-0.1.0.jar  --server.port=8090 --spring.datasource.url=jdbc:mysql://127.0.0.1:3306/dty --spring.datasource.username=root --spring.datasource.password=xxxxxx
+nohup java -jar monitor-screen-0.2.jar --spring.datasource.url=jdbc:mysql://114.25.9.8:4408/lhs_cloud_collector?useUnicode=true\&characterEncoding=utf-8 --spring.datasource.username=dadadad --spring.datasource.password=dadad --spring.redis.host=114.12.21.21 --spring.redis.port=6379 --spring.redis.password=21312 --server.port=9191 &
+
+        
+[运行包 下载地址](https://github.com/shlhs/monitor_screen_release/blob/master/dist/monitor-screen-0.2.jar)  
 
 ### 测试链接：
 http://ip:port/monitor_screen?sn=AVQPEAQH
@@ -25,11 +28,11 @@ http://ip:port/monitor_screen?sn=AVQPEAQH
 
 ### 默认参数：
 ```java
-server.port=8080
+server.port=8098
 
 # REDIS (RedisProperties)
 spring.redis.database=0
-spring.redis.host=114.215.9.8
+spring.redis.host=47.93.32.6
 spring.redis.port=6379
 spring.redis.password=
 spring.redis.pool.max-active=-1
@@ -40,10 +43,9 @@ spring.redis.timeout=0
 spring.thymeleaf.mode=LEGACYHTML5
 
 #spring.datasource.url=jdbc:mysql://127.0.0.1:3306/simufiled
-spring.datasource.url=jdbc:mysql://114.215.90.83:3306/dty
-spring.datasource.username=root
-spring.datasource.password=xxxxxx
-spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.datasource.url=jdbc:mysql://172.17.233.75:4408/collector?useUnicode=true&characterEncoding=utf-8
+spring.datasource.username=2312313
+spring.datasource.password=21323
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 spring.datasource.max-idle=10
 spring.datasource.max-wait=10000
