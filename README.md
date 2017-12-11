@@ -18,6 +18,8 @@ java -jar /home/pvweb/pv-web-0.1.0.jar  --server.port=8090 --spring.datasource.u
 
 ### 测试链接：
 http://ip:port/monitor_screen?sn=AVQPEAQH
+
+    
 注：这里的画面sn（AVQPEAQH）, 根据实际情况进行替换；不同画面, sn不同，该关系存储在MySQL中。
 
 
